@@ -1,26 +1,28 @@
 import { render } from '@testing-library/react';
 import { Component } from 'react'
 import { Carousel, Container, Row, Col } from 'react-bootstrap'
-import books from '../components/data/fantasy.json'
 
-class MyCarousel extends Component { 
-  state = {
-    selectedBook : null
-  }
-  render(){
+
+const  MyCarousel = function( {books}) { 
+  
+  
     return (
-          <Container>
+          <Container className="text-center">
+           
             <Row>
-                <Col xs={12} md={8} lg={6}>
+                <Col className="text-center">
+                <h2>{books[0].category}</h2>
                       <Carousel>{ 
                           books.map(book => ( 
                             <Carousel.Item key = {book.asin}>
+                                <div className="bookContainer">
                                 <img
                                   className="d-block w-100"
                                   src={book.img}
                                   alt= 'cover of a book'  
                                 />
-                                <Carousel.Caption>
+                                </div>
+                                <Carousel.Caption className="bookCaption" key ={book.asin}>
                                     <h3>{book.title}</h3>
                                     <p>Category : {book.category}</p>
                                     <p>Price : {book.price}</p>
@@ -37,6 +39,6 @@ class MyCarousel extends Component {
     )
   }
   
-}
+
 
 export default MyCarousel

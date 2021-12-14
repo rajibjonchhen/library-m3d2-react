@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.card{
+  height:200px;
+  overflow:hidden;
+}
+
+.bookCaption{
+  opacity: 0;
+}
+
+.bookCaption:hover{
+  opacity: 1;
+  background-color: #282c3486;
+}
+
+/* .bookContainer{
+  width:350px;
+  height:450px;
+}
+
+.bookContainer img{
+  object-fit: fill;
+} */
+

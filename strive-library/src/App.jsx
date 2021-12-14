@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNavbar from '../src/components/Nav'
-import MyCarousel from '../src/components/Carousel'
+import MyJumbotron from '../src/components/Jumbotron'
+
+import MyMain from '../src/components/Main'
 import MyFooter from '../src/components/Footer'
 
 
@@ -12,7 +14,8 @@ function App() {
     <div className="App">
       
         <MyNavbar/>
-      <MyCarousel/>
+        <MyJumbotron />
+      <MyMain/>
     <MyFooter />
 
     </div>
