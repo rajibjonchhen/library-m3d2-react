@@ -11,7 +11,7 @@ const  MyCarousel = function( {books}) {
            
             <Row>
                 <Col className="text-center">
-                <h2>{books[0].category}</h2>
+                <h2>{books[0].category.toUpperCase()}</h2>
                       <Carousel>{ 
                           books.map(book => ( 
                             <Carousel.Item key = {book.asin}>
