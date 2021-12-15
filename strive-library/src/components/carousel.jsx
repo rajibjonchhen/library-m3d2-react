@@ -7,10 +7,10 @@ const  MyCarousel = function( {books}) {
   
   
     return (
-          <Container className="text-center">
+          <Container className="text-center mt-5">
            
             <Row>
-                <Col className="text-center">
+                <Col className="text-center text-white">
                 <h2>{books[0].category.toUpperCase()}</h2>
                       <Carousel>{ 
                           books.map(book => ( 

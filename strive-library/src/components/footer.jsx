@@ -1,11 +1,19 @@
 
 import { Col, Container, Row } from "react-bootstrap";
-
+import { FaFacebook, FaInstagram, FaTwitter, FaGoogle, FaYahoo, FaYoutube} from 'react-icons/fa'
 
 const MyFooter = () => {
   return (
-    <footer className=" bg-dark text-white p-4 my-2">
-      <Container>
+    <footer className=" bg-dark text-white  mt-4">
+      <Row>
+          <Col className="bg-warning p-2 mb-2">
+            <div>
+                <FaFacebook/> <FaInstagram/> <FaTwitter/>  <FaGoogle/>  <FaYahoo/>  <FaYoutube/>
+            </div>
+          </Col>
+        </Row>
+      <Container >
+        
         <Row>
           <Col>
           <ul className="list-unstyled">

@@ -11,12 +11,12 @@ import MyFooter from '../src/components/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-secondary">
       
         <MyNavbar/>
         <MyJumbotron />
-      <MyMain/>
       <MySection />
+      <MyMain/>
     <MyFooter />
 
     </div>

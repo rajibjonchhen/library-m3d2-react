@@ -2,13 +2,13 @@
 
 import {Navbar, Nav, Container} from 'react-bootstrap'
 import { BsFillBagCheckFill } from "react-icons/bs";
-import {BsFillBookFill} from "react-icons/bs";
+import {BiBookOpen} from "react-icons/bi";
 
 const MyNavbar = () => {
   return (
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand href="#home"><BsFillBookFill/> Strive Book Store</Navbar.Brand>
+  <Navbar.Brand href="#home"><BiBookOpen/> Strive Book Store</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">

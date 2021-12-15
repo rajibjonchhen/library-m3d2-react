@@ -18,7 +18,7 @@ class MySection extends Component{
                  <Row>
                     <Col>
                        <ButtonGroup size="lg" className="m-5">
-                       <Button onClick ={()=> this.setState({books:fantasy})}>Fantasy</Button>
+                       <Button  onClick ={()=> this.setState({books:fantasy})}>Fantasy</Button>
                         <Button onClick ={()=> this.setState({books:scifi})}>Scifi</Button>
                         <Button onClick ={()=> this.setState({books:horror})}>Horror</Button>
                         <Button onClick ={()=> this.setState({books:romance})}>Romance</Button>
@@ -30,9 +30,9 @@ class MySection extends Component{
                     {
                         this.state.books.slice(0,12).map(book => (
 
-                            <Col xs={12} md={6} lg={3} xl={2} key={book.id} className="mt-2">
+                            <Col xs={12} md={6} lg={3} xl={2} key={book.id} className="mt-4">
     
-                                      <Card style={{ width: '18rem' }} >
+                                      <Card style={{ width: '10rem' }} >
                                     <Card.Img variant="top" src={book.img} style={{ width: '10rem' }}/>
                                     <Card.Body>
                                         <Card.Title>{book.title}</Card.Title>
