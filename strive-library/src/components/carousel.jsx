@@ -22,10 +22,10 @@ const  MyCarousel = function( {books}) {
                                   alt= 'cover of a book'  
                                 />
                                 </div>
-                                <Carousel.Caption className="bookCaption" key ={book.asin}>
+                                <Carousel.Caption className="bookCaption p-2" key ={book.asin}>
                                     <h3>{book.title}</h3>
                                     <p>Category : {book.category}</p>
-                                    <p>Price : {book.price}</p>
+                                    <p>Price : £ {book.price}</p>
                                 </Carousel.Caption>
                           </Carousel.Item>
                           

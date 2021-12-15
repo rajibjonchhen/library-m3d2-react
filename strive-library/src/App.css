@@ -1,3 +1,7 @@
+#root{
+  
+  background:rgb(165, 164, 164);
+}
 .App {
   text-align: center;
 }
@@ -49,7 +53,10 @@
 .bookCaption:hover{
   opacity: 1;
   background-color: #282c3486;
+  z-index: 0;
 }
+
+
 
 /* .bookContainer{
   width:350px;
