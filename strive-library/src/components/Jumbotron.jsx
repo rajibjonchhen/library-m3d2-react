@@ -1,10 +1,10 @@
-import { Container, Jumbotron, Card, Button } from "react-bootstrap"
+import { Container, Jumbotron, Button } from "react-bootstrap"
 
 
 
 const MyJumbotron = () => {
    return(
-    <Container>
+    <Container className="container-fluid">
 
 <Jumbotron>
   <h1>Hello</h1>
