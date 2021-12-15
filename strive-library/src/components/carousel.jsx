@@ -1,5 +1,5 @@
-import { render } from '@testing-library/react';
-import { Component } from 'react'
+
+// import { Component } from 'react'
 import { Carousel, Container, Row, Col } from 'react-bootstrap'
 
 

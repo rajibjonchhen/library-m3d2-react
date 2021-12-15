@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
 import { Component } from 'react'
 import MyCarousel from "./Carousel";
 import {Container, Row, Col} from 'react-bootstrap'
